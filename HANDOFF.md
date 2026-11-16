@@ -1,7 +1,7 @@
 # 又松大學 3D 校園預覽 — handoff
 
 Project: WOOSONG_3D_CAMPUS
-Task: v1.1 — W13 sign correction, night lighting, facade styles, Sol-i view
+Task: v1.2 — Sol-i clipping, animation and night glow, west gate vehicle entrance, W3 door, effects switch
 Status: DELIVERED_PENDING_OWNER_ACCEPTANCE
 PreparedAt: 2026-11-16T20:10:00+09:00
 Last Developer: Claude (claude.ai session)
@@ -11,13 +11,13 @@ Baseline: main
 
 ## Current stage
 
-v1.1 is live at https://joeyaj.github.io/woosong-3d-campus/ (GitHub Pages, root of `main`). Joey has not yet reviewed v1.1. Entry documents: PRD.md, docs/PRODUCT_CHARTER.md, docs/PHASE_PLAN.md, docs/DEVELOPMENT_LOG.md.
+v1.2 is live at https://joeyaj.github.io/woosong-3d-campus/ (GitHub Pages, root of `main`). Joey has not yet reviewed v1.2. Entry documents: PRD.md, docs/PRODUCT_CHARTER.md, docs/PHASE_PLAN.md, docs/DEVELOPMENT_LOG.md.
 
 Note for Mission Control: this repository is public because the public URL is served by GitHub Pages from it. It holds no private data.
 
 ## Next action
 
-Joey reviews v1.1 (W13 sign, night view, Sol-i view) on a real phone and decides the next upgrade from docs/PHASE_PLAN.md.
+Joey reviews v1.2 (Sol-i view clipping and animation, west gate, W3 door, effects switch) on a real phone and decides the next upgrade from docs/PHASE_PLAN.md.
 
 ## Acceptance
 

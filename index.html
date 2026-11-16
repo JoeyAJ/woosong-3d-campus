@@ -130,7 +130,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{
     <div id="tags"></div>
     <div class="ctl tl" id="filters" role="group"></div>
     <div class="ctl bar" id="bar">
-      <button id="bTour"></button><button id="bRoute"></button><button id="bSeason"></button><button id="bNight"></button><button id="bView"></button><button id="bLoc"></button><button id="bShare"></button><button id="bReset"></button>
+      <button id="bTour"></button><button id="bRoute"></button><button id="bSeason"></button><button id="bFx"></button><button id="bNight"></button><button id="bView"></button><button id="bLoc"></button><button id="bShare"></button><button id="bReset"></button>
     </div>
     <div class="hint" data-i="hint"></div>
     <div class="compass" aria-hidden="true"><svg viewBox="0 0 40 40" id="compassSvg"><circle cx="20" cy="20" r="18" fill="none" stroke="#0002"/><path class="n" d="M20 6 L24.5 20 L15.5 20Z"/><path class="s" d="M20 34 L24.5 20 L15.5 20Z"/><text x="20" y="5.5" text-anchor="middle">N</text></svg></div>
@@ -177,7 +177,7 @@ zh:{title:'又松大学 3D 校园预览',sub:'西校区 · 东校区 · 点按�
  note:'位置与高度依官方校园地图绘制，为示意比例。专业、机构与设施所在建筑取自学校官网校园地图；建筑简介为示例文字，待招生团队核对。',
  s1:'栋西校区建筑',s2:'处宿舍',s3:'个专业可按楼查找',s4:'大东站一站到大田站',line1:'1号线',noPhoto:'照片待补充',floors:'楼层指南',floorSrc:'资料与照片：又松大学官网校园地图。',photoSrc:'照片：又松大学官网',
  all:'全部',edu:'教学',dorm:'宿舍',life:'行政与生活',ext:'校外设施',gate:'校门与交通',
- tour:'▶ 松松导览',stop:'■ 停止',route:'报到路线',exitRoute:'退出路线',night:'夜景',day:'白天',season:'季节',spring:'春',summer:'夏',autumn:'秋',winter:'冬',
+ tour:'▶ 松松导览',stop:'■ 停止',route:'报到路线',exitRoute:'退出路线',night:'夜景',day:'白天',fxOn:'飘落效果 · 开',fxOff:'飘落效果 · 关',season:'季节',spring:'春',summer:'夏',autumn:'秋',winter:'冬',
  view:'视角',west:'西校区',east:'东校区',full:'全景',loc:'我的位置',share:'分享',reset:'复位',
  tabB:'建筑',tabM:'专业',tabF:'生活设施',qB:'搜索建筑：图书馆、宿舍、W13…',qM:'搜索专业：护理、铁道、烹饪…',qF:'搜索设施：食堂、ATM、咖啡…',
  empty:'点按地图上的编号，或在下方列表中选择一栋建筑。也可以按「报到路线」，跟着松松走一遍新生报到。',none:'没有找到符合的结果。',
@@ -194,7 +194,7 @@ ko:{title:'우송대학교 3D 캠퍼스 미리보기',sub:'서캠퍼스 · 동�
  note:'위치와 높이는 공식 캠퍼스맵을 바탕으로 한 대략적 비율입니다. 학과·기관·편의시설의 건물 정보는 학교 홈페이지 캠퍼스맵에서 가져왔고, 건물 소개는 예시 문구로 입학팀 확인이 필요합니다.',
  s1:'개 서캠퍼스 건물',s2:'개 기숙사',s3:'개 학과 위치 검색',s4:'대동역, 대전역에서 한 정거장',line1:'1호선',noPhoto:'사진 준비 중',floors:'층별 안내',floorSrc:'자료·사진 출처: 우송대학교 홈페이지 캠퍼스맵',photoSrc:'사진: 우송대학교 홈페이지',
  all:'전체',edu:'강의',dorm:'기숙사',life:'행정·생활',ext:'외부 시설',gate:'출입문·교통',
- tour:'▶ 솔이 투어',stop:'■ 정지',route:'입학 동선',exitRoute:'동선 종료',night:'야경',day:'낮',season:'계절',spring:'봄',summer:'여름',autumn:'가을',winter:'겨울',
+ tour:'▶ 솔이 투어',stop:'■ 정지',route:'입학 동선',exitRoute:'동선 종료',night:'야경',day:'낮',fxOn:'날림 효과 · 켬',fxOff:'날림 효과 · 끔',season:'계절',spring:'봄',summer:'여름',autumn:'가을',winter:'겨울',
  view:'시점',west:'서캠퍼스',east:'동캠퍼스',full:'전체',loc:'내 위치',share:'공유',reset:'초기화',
  tabB:'건물',tabM:'학과',tabF:'편의시설',qB:'건물 검색: 도서관, 기숙사, W13…',qM:'학과 검색: 간호, 철도, 조리…',qF:'시설 검색: 식당, ATM, 카페…',
  empty:'지도 위 번호를 누르거나 아래 목록에서 건물을 고르세요. 「입학 동선」을 누르면 솔이와 함께 신입생 등록 길을 걸어 볼 수 있어요.',none:'검색 결과가 없습니다.',
@@ -211,7 +211,7 @@ en:{title:'Woosong University 3D Campus',sub:'West Campus · East Campus · tap 
  note:'Positions and heights follow the official campus map and are approximate. Majors, offices and amenities per building come from the university\'s campus map; building blurbs are sample text pending review.',
  s1:'West Campus buildings',s2:'dormitories',s3:'majors you can locate',s4:'Daedong Stn, one stop from Daejeon',line1:'Line 1',noPhoto:'Photo coming soon',floors:'Floor guide',floorSrc:'Data and photos: Woosong University campus map (official site).',photoSrc:'Photo: Woosong University website',
  all:'All',edu:'Academic',dorm:'Dorms',life:'Admin & life',ext:'Off-campus',gate:'Gates & transit',
- tour:'▶ Tour with Sol-i',stop:'■ Stop',route:'Arrival route',exitRoute:'Exit route',night:'Night',day:'Day',season:'Season',spring:'Spring',summer:'Summer',autumn:'Autumn',winter:'Winter',
+ tour:'▶ Tour with Sol-i',stop:'■ Stop',route:'Arrival route',exitRoute:'Exit route',night:'Night',day:'Day',fxOn:'Falling effects · On',fxOff:'Falling effects · Off',season:'Season',spring:'Spring',summer:'Summer',autumn:'Autumn',winter:'Winter',
  view:'View',west:'West',east:'East',full:'All',loc:'My location',share:'Share',reset:'Reset',
  tabB:'Buildings',tabM:'Majors',tabF:'Amenities',qB:'Search buildings: library, dorm, W13…',qM:'Search majors: nursing, railroad, culinary…',qF:'Search amenities: cafeteria, ATM, café…',
  empty:'Tap a number on the map or pick a building below. Try “Arrival route” to walk the new-student check-in with Sol-i.',none:'No matches.',
@@ -271,7 +271,7 @@ const RAW=[
 ['E10','独行馆（SolGeo 4）','독행관(솔지오4)','SolGeo 4','dorm',82,387,8,4,4,'#b65a43','SolGeo 宿舍楼，有单人间、2 人间和 4 人间。|솔지오 기숙사로 1인실·2인실·4인실이 있습니다.|SolGeo dormitory with 1-, 2- and 4-person rooms.',12,'E'],
 ['E11','솔스터디홀（克罗顿维尔中心）','솔스터디홀(크로톤빌센터)','Sol Study Hall','life',139,363,5,4,3,'#c47058','东校区的建筑之一，简介待补充。|동캠퍼스 건물입니다. 소개는 추후 보완됩니다.|East Campus building; description to be added.',12,'E'],
 ['GE','东门','동문','East Gate','gate',803,527,0,0,0,'','西校区东门，靠近停车场和 W1 图书馆。|서캠퍼스 동문으로 주차장과 W1 도서관 가까이에 있습니다.|West Campus east gate, near the car park and the W1 library.',0,'X'],
-['GW','西门','서문','West Gate','gate',972,748,0,0,0,'','西校区西门，在 W4 和 W5 之间。|서캠퍼스 서문으로 W4와 W5 사이에 있습니다.|West Campus west gate, between W4 and W5.',0,'X'],
+['GW','西门','서문','West Gate','gate',972,748,0,0,0,'','西校区西门，在 W4 和 W5 之间，是车辆进出校园的出入口。|서캠퍼스 서문으로 W4와 W5 사이에 있으며 차량이 드나드는 출입구입니다.|West Campus west gate, between W4 and W5. Vehicles enter and leave the campus here.',0,'X'],
 ['GN','北门','북문','North Gate','gate',784,782,0,0,0,'','西校区北门，靠近 W3 留学生宿舍。|서캠퍼스 북문으로 W3 유학생기숙사 가까이에 있습니다.|West Campus north gate, near the W3 dormitory.',0,'X'],
 ['GS','南门','남문','South Gate','gate',1532,541,0,0,0,'','西校区南门，出门就是去 SolBridge 的方向。|서캠퍼스 남문으로 솔브릿지 방향입니다.|West Campus south gate, toward SolBridge.',0,'X'],
 ['MTR','大东站','대동역','Daedong Stn','gate',1362,316,0,0,0,'','地铁 1 号线大东（又松大）站，从大田站坐一站即到。|지하철 1호선 대동(우송대)역으로 대전역에서 한 정거장입니다.|Daedong (Woosong Univ.) Station on Metro Line 1, one stop from Daejeon Station.',0,'X'],
@@ -568,6 +568,9 @@ function buildNav(){navC.fill(2);roadF.fill(0);
   Object.values(CAMPUS).flat().forEach(p=>{for(let k=0,l=p.length-1;k<p.length;l=k++){const a=p[l],b2=p[k];eachCellIn([a,b2],.9,(n,x,z)=>{if(segD(x,z,...a,...b2)>.9||roadF[n])return;if(GATEPTS.some(([gx,gz])=>Math.hypot(gx-x,gz-z)<4))return;navC[n]=0})}});
   BPOLYS.forEach(p=>eachCellIn(p,.9,n=>{navC[n]=0;roadF[n]=0}))}
 buildNav();
+function navClearance(){const {nx,nz}=NAV,blk=new Uint8Array(NN);for(let n=0;n<NN;n++)if(!navC[n])blk[n]=1;
+  for(let j=2;j<nz-2;j++)for(let i=2;i<nx-2;i++){const n=j*nx+i;if(blk[n])continue;let d=3;for(let dj=-2;dj<=2;dj++)for(let di=-2;di<=2;di++)if(blk[n+dj*nx+di])d=Math.min(d,Math.max(Math.abs(di),Math.abs(dj)));if(d==1)navC[n]*=3.4;else if(d==2)navC[n]*=1.9}}
+navClearance();
 let reach=null;const okCell=n=>navC[n]&&(!reach||reach[n]);
 function nearestFree(i,j,pred){const {nx,nz}=NAV;const ok=n=>okCell(n)&&(!pred||pred(n));if(ok(j*nx+i))return[i,j];for(let r=1;r<120;r++)for(let dj=-r;dj<=r;dj++)for(let di=-r;di<=r;di++){if(Math.max(Math.abs(di),Math.abs(dj))!=r)continue;const a=i+di,b2=j+dj;if(a>=0&&b2>=0&&a<nx&&b2<nz&&ok(b2*nx+a))return[a,b2]}return[i,j]}
 function buildReach(){const {nx,nz}=NAV,[si,sj]=nearestFree(...cellOf(by.MTR.x,by.MTR.z)),R=new Uint8Array(NN),q=[sj*nx+si];R[q[0]]=1;while(q.length){const n=q.pop(),i=n%nx,j=n/nx|0;for(const [di,dj] of[[1,0],[-1,0],[0,1],[0,-1]]){const a=i+di,b2=j+dj;if(a<0||b2<0||a>=nx||b2>=nz)continue;const m=b2*nx+a;if(!R[m]&&navC[m]){R[m]=1;q.push(m)}}}reach=R}
@@ -589,8 +592,8 @@ function astar(xa,za,xb,zb){const {nx,nz}=NAV;const [si,sj]=nearestFree(...cellO
 // where a person stands to enter a building: the outside edge closest to a path, on campus for campus buildings
 function stopPt(b){if(b._stop)return b._stop;let res;
   if(!b.poly){const [i,j]=nearestFree(...cellOf(b.x,b.z)),[x,z]=cellXZ(i,j);res=new THREE.Vector3(x,0,z)}
-  else{const [cx,cz]=centroid(b.poly);let best=null;const tries=b.front?[b.front]:b.poly.map((a,k)=>{const b2=b.poly[(k+1)%b.poly.length],dx=b2[0]-a[0],dz=b2[1]-a[1],L=Math.hypot(dx,dz);if(L<2.5)return null;let nx=dz/L,nz=-dx/L;const mx=(a[0]+b2[0])/2,mz=(a[1]+b2[1])/2;if((mx-cx)*nx+(mz-cz)*nz<0){nx=-nx;nz=-nz}return{a,b:b2,L,nx,nz,mx,mz}}).filter(Boolean);
-    tries.forEach(e=>{const px=e.mx+e.nx*2.2,pz=e.mz+e.nz*2.2,[i,j]=nearestFree(...cellOf(px,pz),b.area!='X'?n=>inCampus(...cellXZ(n%NAV.nx,n/NAV.nx|0),b.area):null),[x,z]=cellXZ(i,j),c=navC[j*NAV.nx+i],sc=Math.hypot(x-px,z-pz)*2+c*3-Math.sqrt(e.L)*.4;if(!best||sc<best.sc)best={sc,x,z,e}});
+  else{const [cx,cz]=centroid(b.poly),cIn=b.id=='W3'&&CAMPUS.W?centroid(CAMPUS.W[0]):null;let best=null;const tries=b.front?[b.front]:b.poly.map((a,k)=>{const b2=b.poly[(k+1)%b.poly.length],dx=b2[0]-a[0],dz=b2[1]-a[1],L=Math.hypot(dx,dz);if(L<2.5)return null;let nx=dz/L,nz=-dx/L;const mx=(a[0]+b2[0])/2,mz=(a[1]+b2[1])/2;if((mx-cx)*nx+(mz-cz)*nz<0){nx=-nx;nz=-nz}return{a,b:b2,L,nx,nz,mx,mz}}).filter(Boolean);
+    tries.forEach(e=>{const px=e.mx+e.nx*3.2,pz=e.mz+e.nz*3.2,[i,j]=nearestFree(...cellOf(px,pz),b.area!='X'?n=>inCampus(...cellXZ(n%NAV.nx,n/NAV.nx|0),b.area):null),[x,z]=cellXZ(i,j),c=navC[j*NAV.nx+i],sc=Math.hypot(x-px,z-pz)*2+c*3-Math.sqrt(e.L)*.4+(cIn&&(cIn[0]-e.mx)*e.nx+(cIn[1]-e.mz)*e.nz<0?90:0);if(!best||sc<best.sc)best={sc,x,z,e}});
     res=new THREE.Vector3(best.x,0,best.z);b._edge=best.e}
   return b._stop=res}
 const frontOf=stopPt;
@@ -622,7 +625,7 @@ const TREES=[];{const r=rng(21),near=(x,z)=>TREES.some(t=>Math.abs(t.x-x)<1.3&&M
   Object.values(CAMPUS).flat().forEach(p=>{const [cx,cz]=centroid(p);for(let k=0;k<p.length;k++){const a=p[k],b2=p[(k+1)%p.length],L=Math.hypot(b2[0]-a[0],b2[1]-a[1]);for(let s=1.5;s<L;s+=4.5){const x=a[0]+(b2[0]-a[0])*s/L,z=a[1]+(b2[1]-a[1])*s/L,dx=cx-x,dz=cz-z,dl=Math.hypot(dx,dz);add(x+dx/dl*1.8,z+dz/dl*1.8)}}});
   ROADS.forEach(rd=>{if(!/^(primary|secondary|tertiary)$/.test(rd.k))return;for(let k=1;k<rd.p.length;k++){const a=rd.p[k-1],b2=rd.p[k],L=Math.hypot(b2[0]-a[0],b2[1]-a[1]);for(let s=1;s<L;s+=6.5){const x=a[0]+(b2[0]-a[0])*s/L,z=a[1]+(b2[1]-a[1])*s/L;if(Math.hypot(x-33,z+56)>150&&Math.hypot(x-227,z-10)>80&&Math.hypot(x+40,z-200)>60)continue;const nx=-(b2[1]-a[1])/L,nz=(b2[0]-a[0])/L,o=rd.w/2+1.1;add(x+nx*o,z+nz*o,'zelkova');add(x-nx*o,z-nz*o,'zelkova')}}})}
 const decTrees=TREES.filter(t=>t.sp!='pine');
-TREES.forEach(t=>{if(inCampus(t.x,t.z)){const [i,j]=cellOf(t.x,t.z);navC[j*NAV.nx+i]=0}});
+TREES.forEach(t=>{if(inCampus(t.x,t.z)){const [i,j]=cellOf(t.x,t.z),n=j*NAV.nx+i;navC[n]=0;for(const d of[-1,1,-NAV.nx,NAV.nx,-NAV.nx-1,-NAV.nx+1,NAV.nx-1,NAV.nx+1])if(navC[n+d]>0&&navC[n+d]<6)navC[n+d]*=3}});
 const trunkG=new THREE.CylinderGeometry(.16,.22,1.6,6).translate(0,.8,0),crownG=new THREE.IcosahedronGeometry(1,1),coneG=new THREE.ConeGeometry(1,1,7).translate(0,.5,0),capG2=new THREE.ConeGeometry(1,1,7).translate(0,.5,0),litterG=new THREE.CircleGeometry(1,16).rotateX(-Math.PI/2);
 const branchG=(()=>{const parts=[];[0,1.3,2.5,3.8,5.1].forEach((a,j)=>{const L=1+j%2*.45,tl=.55+(j%3)*.15,m=new THREE.CylinderGeometry(.04,.09,L,5);m.rotateZ(-Math.cos(a)*tl);m.rotateX(Math.sin(a)*tl);m.translate(Math.cos(a)*Math.sin(tl)*L/2,1.3+j*.1+Math.cos(tl)*L/2,Math.sin(a)*Math.sin(tl)*L/2);parts.push(m)});return mergeGeometries(parts)})();
 const leafM=new THREE.MeshStandardMaterial({roughness:.85}),pineM=new THREE.MeshStandardMaterial({roughness:.9}),trunkM=std('#7a5a3c'),litterM=new THREE.MeshStandardMaterial({roughness:1,transparent:true,opacity:.9,depthWrite:false});
@@ -663,7 +666,7 @@ const lampsOK=lamps.filter(([x,z])=>{const [i,j]=cellOf(x,z);return navC[j*NAV.n
 const poleG=new THREE.CylinderGeometry(.06,.08,3.2,6),armG=new THREE.BoxGeometry(.8,.08,.16),lampMat=std('#5a5e66',{roughness:.5,metalness:.4});
 const poles=new THREE.InstancedMesh(poleG,lampMat,lampsOK.length),arms=new THREE.InstancedMesh(armG,lampMat,lampsOK.length),glowPos=new Float32Array(lampsOK.length*3);
 lampsOK.forEach(([x,z,ox,oz],i)=>{const y=groundY(x,z);poles.setMatrixAt(i,_M.compose(_V.set(x,y+1.6,z),_Q.identity(),_Sv.set(1,1,1)));arms.setMatrixAt(i,_M.compose(_V.set(x+ox*.35,y+3.18,z+oz*.35),_Q.setFromAxisAngle(new THREE.Vector3(0,1,0),Math.atan2(-oz,ox)),_Sv.set(1,1,1)));glowPos.set([x+ox*.7,y+3.05,z+oz*.7],i*3)});
-poles.castShadow=arms.castShadow=true;scene.add(poles,arms);
+poles.castShadow=arms.castShadow=true;scene.add(poles,arms);lampsOK.forEach(([x,z])=>{const [i,j]=cellOf(x,z);navC[j*NAV.nx+i]=0});
 const glowGeo=new THREE.BufferGeometry();glowGeo.setAttribute('position',new THREE.BufferAttribute(glowPos,3));const radTex=(()=>{const c=document.createElement('canvas');c.width=c.height=128;const g=c.getContext('2d'),gr=g.createRadialGradient(64,64,0,64,64,64);gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.3,'rgba(255,255,255,.5)');gr.addColorStop(.7,'rgba(255,255,255,.12)');gr.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gr;g.fillRect(0,0,128,128);return new THREE.CanvasTexture(c)})();
 const glowMat=new THREE.PointsMaterial({size:3.2,map:radTex,color:0xffd28a,transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending});const glowPts=new THREE.Points(glowGeo,glowMat);scene.add(glowPts);
 const poolMat=new THREE.MeshBasicMaterial({map:radTex,color:0xffc27a,fog:false,transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending}),pools=new THREE.InstancedMesh(new THREE.PlaneGeometry(6.5,6.5).rotateX(-Math.PI/2),poolMat,lampsOK.length);
@@ -676,7 +679,15 @@ const CARS=[];const movers=[];ROADS.forEach((r,ri)=>{if(r.foot||!/^(primary|seco
   for(let i=0;i<n;i++){const c=makeCar(ri*3+i);scene.add(c);CARS.push(c);movers.push({c,r,seg,L,t:(i+.5)/n*L,dir:(i+ri)%2?1:-1,sp:4+((ri*7+i*3)%4)})}});
 function stepCars(dt){movers.forEach(m=>{m.t+=m.dir*m.sp*dt;if(m.t>m.L){m.t=m.L;m.dir=-1}if(m.t<0){m.t=0;m.dir=1}let t=m.t,k=0;while(k<m.seg.length-1&&t>m.seg[k]){t-=m.seg[k];k++}const a=m.r.p[k],b2=m.r.p[k+1],u=Math.min(1,t/(m.seg[k]||1)),dx=(b2[0]-a[0])*m.dir,dz=(b2[1]-a[1])*m.dir,L=Math.hypot(dx,dz)||1,o=m.r.w*.25;
   m.c.position.set(a[0]+(b2[0]-a[0])*u-dz/L*o,SLAB+.04,a[1]+(b2[1]-a[1])*u+dx/L*o);m.c.rotation.y=Math.atan2(-dz,dx)})}
-{const r=rng(17);AREAS.filter(a=>a.k=='parking').forEach(a=>{const o=obb(a.p);if(Math.hypot(o.cx-33,o.cz+56)>170&&Math.hypot(o.cx-227,o.cz-10)>90)return;for(let u=-o.w/2+.6;u<o.w/2-.4;u+=.82)for(let v=-o.d/2+1.1;v<o.d/2-.8;v+=2.4){if(r()<.42)continue;const x=o.cx+u*Math.cos(o.a)-v*Math.sin(o.a),z=o.cz+u*Math.sin(o.a)+v*Math.cos(o.a);if(!inPoly(x,z,a.p))continue;const [i,j]=cellOf(x,z);if(!navC[j*NAV.nx+i])continue;const c=makeCar(Math.floor(r()*9));c.position.set(x,groundY(x,z)+.03,z);c.rotation.y=-o.a+Math.PI/2+(r()<.5?Math.PI:0);scene.add(c);CARS.push(c)}})}
+{const r=rng(17),carCells=[];AREAS.filter(a=>a.k=='parking').forEach(a=>{const o=obb(a.p);if(Math.hypot(o.cx-33,o.cz+56)>170&&Math.hypot(o.cx-227,o.cz-10)>90)return;for(let u=-o.w/2+.6;u<o.w/2-.4;u+=.82)for(let v=-o.d/2+1.1;v<o.d/2-.8;v+=2.4){if(r()<.42)continue;const x=o.cx+u*Math.cos(o.a)-v*Math.sin(o.a),z=o.cz+u*Math.sin(o.a)+v*Math.cos(o.a);if(!inPoly(x,z,a.p))continue;const [i,j]=cellOf(x,z);if(!navC[j*NAV.nx+i])continue;const c=makeCar(Math.floor(r()*9));c.position.set(x,groundY(x,z)+.03,z);c.rotation.y=-o.a+Math.PI/2+(r()<.5?Math.PI:0);scene.add(c);CARS.push(c);carCells.push(j*NAV.nx+i)}});carCells.forEach(n=>navC[n]=0)}
+// west gate is a vehicle entrance: driveway from the street, pillars, barrier arm, guard booth
+{const b=by.GW;let rd=null,sv=null;ROADS.forEach(r=>{if(r.foot)return;for(let k=1;k<r.p.length;k++){const [ax,az]=r.p[k-1],[bx,bz]=r.p[k],dx=bx-ax,dz=bz-az,l=dx*dx+dz*dz||1,u=Math.max(0,Math.min(1,((b.x-ax)*dx+(b.z-az)*dz)/l)),px=ax+u*dx,pz=az+u*dz,d=Math.hypot(b.x-px,b.z-pz),o={d,px,pz};if(r.k=='service'&&inCampus(px,pz,'W')){if(d>2.5&&(!sv||d<sv.d))sv=o}else if(r.k!='service'&&(!rd||d<rd.d))rd=o}});
+ if(rd&&rd.d>.5){const pts=[[rd.px,rd.pz],[b.x,b.z],...[[84,-327],[107,-280],[116,-259]].map(M2)];ribbon(pts,1.8,roadMat,SLAB+.042);flushRibbons();
+  const dx=b.x-rd.px,dz=b.z-rd.pz,L=Math.hypot(dx,dz),ux=dx/L,uz=dz/L,g=new THREE.Group(),pm=std('#e9e6df'),rm=std('#b8243f'),wm=std('#ffffff'),HW=1.3;
+  for(const s2 of[-1,1]){const pl=new THREE.Mesh(new THREE.BoxGeometry(.5,1.5,.5),pm);pl.position.set(0,.75,s2*HW);const cp=new THREE.Mesh(new THREE.BoxGeometry(.64,.12,.64),rm);cp.position.set(0,1.56,s2*HW);g.add(pl,cp)}
+  const pv=new THREE.Group();pv.position.set(.45,.95,-HW+.3);for(let k=0;k<5;k++){const sg=new THREE.Mesh(new THREE.BoxGeometry(.09,.09,.44),k%2?wm:rm);sg.position.z=.22+k*.44;pv.add(sg)}pv.rotation.x=-.62;g.add(pv);
+  const bo=new THREE.Mesh(new THREE.BoxGeometry(1,1.25,1),std('#dfe3e6')),br=new THREE.Mesh(new THREE.BoxGeometry(1.2,.12,1.2),std('#3b4a5c')),bw=new THREE.Mesh(new THREE.BoxGeometry(1.02,.45,.7),std('#6f8aa3',{roughness:.2,metalness:.3}));bo.position.set(.6,.625,HW+1);br.position.set(.6,1.31,HW+1);bw.position.set(.6,.85,HW+1);g.add(bo,br,bw);
+  g.rotation.y=-Math.atan2(uz,ux);g.position.set(b.x,groundY(b.x,b.z),b.z);g.traverse(m=>{if(m.isMesh)m.castShadow=true});scene.add(g)}}
 // zebra crossings at the gates
 {const zt=tex2(g=>{g.fillStyle='#000';g.fillRect(0,0,64,64);g.fillStyle='#fff';for(let i=0;i<8;i++)g.fillRect(i*8+1,0,5,64)},64);
  ['GE','GW','GN','GS','GSE','EGS'].forEach(id=>{const b=by[id];let best=null;ROADS.forEach(r=>{if(r.foot||r.k=='service')return;for(let k=1;k<r.p.length;k++){const [ax,az]=r.p[k-1],[bx,bz]=r.p[k],dx=bx-ax,dz=bz-az,l=dx*dx+dz*dz,u=Math.max(0,Math.min(1,((b.x-ax)*dx+(b.z-az)*dz)/l)),px=ax+u*dx,pz=az+u*dz,d=Math.hypot(b.x-px,b.z-pz);if(!best||d<best.d)best={d,px,pz,dx,dz,w:r.w}}});
@@ -700,9 +711,14 @@ const soli=new THREE.Group();
  {const g=mkAcc('winter'),w=std('#f9fbfd');a(g,new THREE.ConeGeometry(.6,.72,18),w,0,4.02,0);a(g,new THREE.ConeGeometry(1.0,.35,18),w,0,3.35,0).scale.y=.6}
  soli.userData.acc=acc;
  soli.scale.setScalar(.75);})();
+soli.rotation.order='YXZ';const soliMats=[...new Set(soli.children.filter(m=>m.isMesh).map(m=>m.material))];soliMats.forEach(m=>{m.emissive=m.color.clone();m.emissiveIntensity=0});
+const soliLight=new THREE.PointLight(0xffe2a8,0,20,1.5);soliLight.position.y=3.2;soli.add(soliLight);const soliHalo=new THREE.Sprite(new THREE.SpriteMaterial({map:radTex,color:0xffd98a,transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending}));soliHalo.scale.set(10,10,1);soliHalo.position.y=2.4;soli.add(soliHalo);
 scene.add(soli);
-const soliS={path:[],hop:0,face:0,speed:22};
+const soliS={path:[],hop:0,face:0,speed:22,v:0,ph:0,mk:0,sc:.75};
 const RM0=matchMedia('(prefers-reduced-motion: reduce)').matches;let followHold=false,camA=0;const guided=()=>!!tourT||routeI>=0,followOn=()=>guided()&&!followHold&&!RM0,_fp=new THREE.Vector3(),_ft=new THREE.Vector3();
+let OBS=null;function camFree(x,y,z){if(!OBS){OBS=[];const ad=(p,top)=>{let a=1e9,b=-1e9,c=1e9,d=-1e9;for(const [px,pz] of p){a=Math.min(a,px);b=Math.max(b,px);c=Math.min(c,pz);d=Math.max(d,pz)}OBS.push({p,top,a:a-.6,b:b+.6,c:c-.6,d:d+.6})};B.forEach(b=>{if(b.poly)ad(b.poly,b.base+b.h)});if(OSMB.W3b)ad(OSMB.W3b,6*FH+1);CTX.forEach(c=>ad(c.p,(c.h||3)+.4))}
+  for(const o of OBS){if(x<o.a||x>o.b||z<o.c||z>o.d||y>o.top+.5)continue;if(inPoly(x,z,o.p))return false;for(let i=0,j=o.p.length-1;i<o.p.length;j=i++)if(segD(x,z,...o.p[j],...o.p[i])<.6)return false}
+  if(y<4.2)for(const t of TREES){const dx=t.x-x,dz=t.z-z;if(dx*dx+dz*dz<2.6)return false}return true}
 function followStart(){followHold=false;if(!guided())camA=Math.atan2(soli.position.x-camera.position.x,soli.position.z-camera.position.z)}
 function walkTo(p){const s=soli.position,r=astar(s.x,s.z,p.x,p.z);const pts=(r?r.slice(1):[]).map(([x,z])=>new THREE.Vector3(x,0,z));pts.push(new THREE.Vector3(p.x,0,p.z));
   let len=0,px=s.x,pz=s.z;pts.forEach(q=>{len+=Math.hypot(q.x-px,q.z-pz);px=q.x;pz=q.z});soliS.path=pts;soliS.speed=followOn()?Math.min(26,Math.max(12,len/6)):Math.max(14,len/4)}
@@ -872,7 +888,7 @@ function endRoute(silent){routeI=-1;routeMesh.visible=false;ROUTE.forEach(s=>by[
 qs('#bRoute').onclick=()=>routeI>=0?endRoute():startRoute();
 
 /* ---------------- season / night / views ---------------- */
-const SEASONS=['spring','summer','autumn','winter'];let season=SEASONS[[3,3,0,0,0,1,1,1,2,2,2,3][new Date().getMonth()]],night=false;
+const SEASONS=['spring','summer','autumn','winter'];let season=SEASONS[[3,3,0,0,0,1,1,1,2,2,2,3][new Date().getMonth()]],night=false;let fxOn=true;try{fxOn=localStorage.getItem('wsu3d_fx')!=='0'}catch(e){}
 const SEA={spring:{top:'#9ec3ea',bg:'#eef0f2',sun:'#fff4e8',si:2.2,hemi:1.6,slab:'#93b96a',ground:'#e7e5e1',road:'#bdbcbb',pine:'#4a9440',fog:[220,440]},
  summer:{top:'#6fa8e0',bg:'#e2ecf1',sun:'#ffffff',si:2.6,hemi:1.7,slab:'#6fa64e',ground:'#e4e3df',road:'#b9b8b7',pine:'#2f7d34',fog:[240,470]},
  autumn:{top:'#a9c0d6',bg:'#f1e8dc',sun:'#ffd9ab',si:2.2,hemi:1.5,slab:'#a8a75c',ground:'#e9e2d7',road:'#c0bab2',pine:'#3d7c39',fog:[200,420]},
@@ -888,12 +904,13 @@ function applyLook(init){const S=SEA[season],w=season=='winter';lookT=performanc
   L_top.t.set(night?'#070a18':S.top);paintFlowers();
   roofs.forEach(r=>r.L.t.set(w?'#f6f8fa':r.col));
   treeTargets();Object.assign(TLT,{leaf:w?0:1,bare:w?1:season=='autumn'?.4:0,cap:w?1:0,litter:season=='autumn'?1:season=='spring'?.55:w?.9:0});dressPeople();CARS.forEach(c=>{if(c.userData.snow)c.userData.snow.visible=w});
-  petals.tgt=season=='spring'?1:0;leaves.tgt=season=='autumn'?1:0;snowS.tgt=snowL.tgt=w?1:0;ffA.tgt=season=='summer'&&night?1:0;
+  petals.tgt=fxOn&&season=='spring'?1:0;leaves.tgt=fxOn&&season=='autumn'?1:0;snowS.tgt=snowL.tgt=fxOn&&w?1:0;ffA.tgt=season=='summer'&&night?1:0;
   if(init){LERPS.forEach(o=>o.c.copy(o.t));Object.assign(TL,TLT);crownC.set(crownT);litC.set(litT);treePose();treeColorsStep(1);scene.fog.near=fogT[0];scene.fog.far=fogT[1];hemi.intensity=hemiT;sun.intensity=sunT;for(const s of[petals,leaves,snowS,snowL,ffA])s.amt=s.tgt;stage.style.background=L_bg.c.getStyle()}
   renderStatic();
 }
 qs('#bSeason').onclick=()=>{season=SEASONS[(SEASONS.indexOf(season)+1)%4];applyLook();toast(t('season')+' · '+t(season),1600)};
 qs('#bNight').onclick=()=>{night=!night;applyLook()};
+qs('#bFx').onclick=()=>{fxOn=!fxOn;try{localStorage.setItem('wsu3d_fx',fxOn?'1':'0')}catch(e){}applyLook()};
 const VIEWS=['west','east','full'];let view='west';
 function viewPose(v){const a=camera.aspect<.9,V=(tx,tz,d,el,az)=>{const t=new THREE.Vector3(tx,0,tz),p=new THREE.Vector3(Math.sin(az)*Math.cos(el),Math.sin(el),Math.cos(az)*Math.cos(el)).multiplyScalar(d).add(t);return{p,t}};
   if(v=='east')return a?V(228,4,250,.85,-.35):V(228,4,190,.8,-.35);
@@ -970,7 +987,7 @@ function renderStatic(){
   F.innerHTML=CATS.map(k=>`<button data-k="${k}" aria-pressed="${!hl&&filter==k}">${t(k)}</button>`).join('');
   qs('#bTour').textContent=tourT?t('stop'):t('tour');qs('#bTour').setAttribute('aria-pressed',!!tourT);
   qs('#bRoute').textContent=routeI>=0?t('exitRoute'):t('route');qs('#bRoute').setAttribute('aria-pressed',routeI>=0);
-  qs('#bSeason').textContent=t('season')+' · '+t(season);qs('#bNight').textContent=night?t('day'):t('night');qs('#bNight').setAttribute('aria-pressed',night);
+  qs('#bSeason').textContent=t('season')+' · '+t(season);qs('#bNight').textContent=night?t('day'):t('night');qs('#bNight').setAttribute('aria-pressed',night);qs('#bFx').textContent=t(fxOn?'fxOn':'fxOff');qs('#bFx').setAttribute('aria-pressed',fxOn);
   qs('#bView').textContent=t('view')+' · '+t(view);qs('#bLoc').textContent=t('loc');qs('#bShare').textContent=t('share');qs('#bReset').textContent=t('reset');
   qs('#tabs').querySelectorAll('button').forEach(b=>{b.textContent=t('tab'+b.dataset.t.toUpperCase());b.setAttribute('aria-pressed',b.dataset.t==tab)});
   q.placeholder=t('q'+tab.toUpperCase());q.setAttribute('aria-label',q.placeholder);
@@ -1024,16 +1041,23 @@ function loop(now){
   stepFF(now);
   // Sol-i: follows the path found around buildings
   let moving=false;const nxt=soliS.path[0];
-  if(nxt){const dx=nxt.x-soli.position.x,dz=nxt.z-soli.position.z,dist=Math.hypot(dx,dz),step=reduce?1e9:soliS.speed*dt;moving=true;soliS.face=Math.atan2(dx,dz);
+  if(nxt){const dx=nxt.x-soli.position.x,dz=nxt.z-soli.position.z,dist=Math.hypot(dx,dz);const tv=soliS.path.length==1?Math.min(soliS.speed,Math.max(3.5,dist*1.8)):soliS.speed;soliS.v+=(tv-soliS.v)*Math.min(1,dt*3.5);const step=reduce?1e9:Math.max(.5,soliS.v)*dt;moving=true;soliS.face=Math.atan2(dx,dz);
     if(dist<=step){soli.position.x=nxt.x;soli.position.z=nxt.z;soliS.path.shift();if(reduce)while(soliS.path.length){const q=soliS.path.shift();soli.position.x=q.x;soli.position.z=q.z}}
     else{soli.position.x+=dx/dist*step;soli.position.z+=dz/dist*step}}
   const gy=groundY(soli.position.x,soli.position.z),hop=soliS.hop&&now-soliS.hop<600?Math.sin((now-soliS.hop)/600*Math.PI)*2:0;
-  soli.position.y=gy+(moving?Math.abs(Math.sin(now/85))*.45:Math.sin(now/500)*.12)+hop;
+  if(!moving)soliS.v*=Math.max(0,1-dt*6);soliS.mk+=((moving?1:0)-soliS.mk)*Math.min(1,dt*7);if(moving)soliS.ph+=dt*(5.2+soliS.v*.22);
+  {const mk=soliS.mk,ph=soliS.ph,idle=1-mk,ts=guided()&&!RM0?.5:.75;soliS.sc+=(ts-soliS.sc)*Math.min(1,dt*4);const sc=soliS.sc,sq=1+mk*.055*Math.cos(ph*2)+idle*.014*Math.sin(now/620);
+   soli.scale.set(sc*(2-sq),sc*sq,sc*(2-sq));soli.position.y=gy+mk*Math.abs(Math.sin(ph))*.42*sc+idle*(.04+.04*Math.sin(now/620))+hop;
+   soli.rotation.z=mk*Math.sin(ph)*.085+idle*Math.sin(now/1100)*.02;soli.rotation.x=mk*.11*Math.min(1,soliS.v/18);
+   const lg=soli.children;for(const k of[0,1]){const s2=k?-1:1,q=Math.sin(ph)*s2;lg[k].position.z=mk*q*.3;lg[k].position.y=.35+mk*Math.max(0,q)*.16;lg[k].rotation.x=-mk*q*.45}}
   const fol=followOn(),want=moving?soliS.face:fol?camA:Math.atan2(camera.position.x-soli.position.x,camera.position.z-soli.position.z);
-  let da=want-soli.rotation.y;da=Math.atan2(Math.sin(da),Math.cos(da));soli.rotation.y+=da*Math.min(1,dt*(moving?12:5));
+  let da=want-soli.rotation.y;da=Math.atan2(Math.sin(da),Math.cos(da));soli.rotation.y+=da*Math.min(1,dt*(moving?7.5:5));
   if(fol){fly=null;controls.maxPolarAngle=1.52;const sp=soli.position,b=cur,kf=1-Math.exp(-dt*3.2);let wa=camA;if(moving)wa=soliS.face;else if(b){const dx=b.x-sp.x,dz=b.z-sp.z;if(dx*dx+dz*dz>1)wa=Math.atan2(dx,dz)}
-    let d=wa-camA;d=Math.atan2(Math.sin(d),Math.cos(d));camA+=d*Math.min(1,dt*(moving?2.4:1.5));const sx=Math.sin(camA),cz=Math.cos(camA),g0=groundY(sp.x,sp.z);
-    _fp.set(sp.x-sx*9.5,g0+5.8,sp.z-cz*9.5);_ft.set(sp.x+sx*12,g0+3+(moving||!b?0:Math.min(b.h*.45,7)),sp.z+cz*9);camera.position.lerp(_fp,kf);controls.target.lerp(_ft,kf)}
+    let d=wa-camA;d=Math.atan2(Math.sin(d),Math.cos(d));camA+=d*Math.min(1,dt*(moving?2.4:1.5));const sx=Math.sin(camA),cz=Math.cos(camA),g0=groundY(sp.x,sp.z),BK=7.2,UP=4.3;
+    // keep the camera out of buildings: pull it in toward Sol-i and lift it when a wall is behind
+    let tk=1;for(let q=1;q<=8;q++){const u=q/8;if(!camFree(sp.x-sx*BK*u,g0+2+(UP-2)*u,sp.z-cz*BK*u)){tk=Math.max(0,(q-1)/8-.08);break}}
+    soliS.tk=(soliS.tk??1)+(tk-(soliS.tk??1))*Math.min(1,dt*(tk<(soliS.tk??1)?9:2));const u=Math.max(.22,soliS.tk),lift=(1-u)*3.4;
+    _fp.set(sp.x-sx*BK*u,g0+UP+lift,sp.z-cz*BK*u);const ah=1.2+7.8*(u-.22)/.78;_ft.set(sp.x+sx*ah,g0+2.2+(moving||!b?0:Math.min(b.h*.45,7)*u*u),sp.z+cz*ah);camera.position.lerp(_fp,kf);controls.target.lerp(_ft,kf)}
   else if(controls.maxPolarAngle!=1.36&&!guided())controls.maxPolarAngle=1.36;
   const acc=soli.userData.acc;for(const s in acc){const g=acc[s],v=g.scale.x+((s==season?1:.001)-g.scale.x)*Math.min(1,dt*5);g.scale.setScalar(v);g.visible=v>.02}
   // route dashes, location halo
@@ -1041,7 +1065,7 @@ function loop(now){
   if(meDot.visible){const s=1+.25*Math.sin(now/300);meHalo.scale.set(s,s,1)}
   // sky, night lights, traffic, people, shadows, compass
   sky.position.copy(camera.position);stars.position.copy(camera.position);skyMat.uniforms.top.value.copy(L_top.c);skyMat.uniforms.bot.value.copy(L_bg.c);
-  nightK+=((night?1:0)-nightK)*k;starMat.opacity=nightK*.9;glowMat.opacity=nightK;poolMat.opacity=nightK*.5;pools.visible=nightK>.02;headMat.emissiveIntensity=nightK*2;
+  nightK+=((night?1:0)-nightK)*k;starMat.opacity=nightK*.9;glowMat.opacity=nightK;poolMat.opacity=nightK*.5;pools.visible=nightK>.02;headMat.emissiveIntensity=nightK*2;soliMats.forEach(m=>m.emissiveIntensity=nightK*.55);soliLight.intensity=nightK*34;soliHalo.material.opacity=nightK*.5;
   if(!reduce){stepCars(dt);stepPeople(dt,now)}
   sun.target.position.copy(controls.target);sun.position.set(controls.target.x-60,110,controls.target.z+70);
   {const a=controls.target,v1=a.clone().project(camera),v2=a.clone().add(NORTH).project(camera),ang=Math.atan2((v2.x-v1.x)*camera.aspect,v2.y-v1.y)*180/Math.PI;if(Math.abs(ang-compassA)>.4){compassA=ang;compassSvg.style.transform=`rotate(${ang.toFixed(1)}deg)`}}

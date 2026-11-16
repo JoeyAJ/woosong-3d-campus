@@ -30,3 +30,15 @@ Requested by Joey after reviewing v1.
 - **Facade styles checked against the 35 official photos**: ribbon windows for W1, W6, W10, W13, 05 and SolBridge (dark tower with a white core strip), nearly windowless wall for W2, barrel roof for W11.
 - **Sol-i view**: in the Sol-i tour and the arrival route the camera now follows behind Sol-i at street level. Dragging the scene frees the camera until the next stop. The tour waits for Sol-i to arrive before moving on (it used a fixed 5.6 s timer).
 - Tests: Playwright + SwiftShader screenshots of the W13 sign (day and night), night view and the route in Sol-i view. SwiftShader runs at about 1 fps, so motion was checked with a test-only time step, not at real speed. Not tested on a real phone.
+
+## v1.2 (2026-11-16)
+
+Joey's feedback on v1.1: Sol-i clips through things, is too dark at night, and the animation is crude; the west gate has a vehicle entrance; the W3 dorm door faces into the campus; add a switch for the falling effects.
+
+- **Clipping**: walking cost now rises near walls, trees, lamps and parked cars (lamps and parked cars are blocked), so Sol-i keeps to the middle of paths. Building stop points moved from 2.2 to 3.2 units in front of the entrance. Sol-i is drawn at 0.5 scale in Sol-i view (0.75 otherwise). The camera tests the line behind Sol-i against building footprints and trees and pulls in / lifts instead of entering them.
+- **Sol-i animation**: eased start and stop, step-driven hop, alternating legs, body sway and forward lean, squash and stretch, smoother turning.
+- **Night**: Sol-i's materials glow, with a warm point light and halo.
+- **West gate**: driveway from the street between W4 and W5 to the campus service road, gate pillars, raised barrier arm, guard booth; gate text updated (zh/ko/en).
+- **W3**: entrance is chosen on a facade facing the campus interior.
+- **Falling effects switch** in the toolbar (petals, leaves, snow); remembered per browser when storage is available.
+- Tests: SwiftShader screenshots of the day and night route in Sol-i view; no page errors. Motion quality was not judged at real frame rate, and the west gate model was not seen in a close-up (it sits behind W4 from the default angle).
