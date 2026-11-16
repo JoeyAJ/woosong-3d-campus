@@ -20,3 +20,13 @@ Built in one long Claude session, 2026-11 (Mon 16 Nov = v1 freeze).
 - Network proxy blocked Overpass → map data fetched from the OSM API through the browser.
 - Early particles invisible/noisy → resized, thinned by camera distance.
 - Tree count first too high (7.4k, oversized) → smaller trees, wider spacing.
+
+## v1.1 (2026-11-16, same day as v1)
+
+Requested by Joey after reviewing v1.
+
+- **W13 sign corrected** against the official building photo: a box on top of the core with two navy faces (white ㅇㅅㄷ mark) and two white faces (green/blue/red ㅇㅅㄷ mark). The v1 sign used a wrong crop of the logo and a red pillar that does not exist. The tower also got ribbon windows, the dark glazed strip and the white banner panel.
+- **Night scene fixed**: lamp light pools were drawn as opaque white squares (no texture). They now use a soft radial texture; ambient light is darker and bluish, ground and roads are darker, the sign is lit.
+- **Facade styles checked against the 35 official photos**: ribbon windows for W1, W6, W10, W13, 05 and SolBridge (dark tower with a white core strip), nearly windowless wall for W2, barrel roof for W11.
+- **Sol-i view**: in the Sol-i tour and the arrival route the camera now follows behind Sol-i at street level. Dragging the scene frees the camera until the next stop. The tour waits for Sol-i to arrive before moving on (it used a fixed 5.6 s timer).
+- Tests: Playwright + SwiftShader screenshots of the W13 sign (day and night), night view and the route in Sol-i view. SwiftShader runs at about 1 fps, so motion was checked with a test-only time step, not at real speed. Not tested on a real phone.

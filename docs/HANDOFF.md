@@ -30,3 +30,11 @@ Working, single file `index.html` (~890 lines + embedded data: GEO, photos, logo
 
 ## Rules for AI continuing this work
 Keep three languages in sync. Never invent building data; mark unknowns. Do not put tokens, admin URLs or personal data in the repo. Keep the OSM attribution.
+
+## v1.1 addendum (2026-11-16)
+
+- `STYLE` (next to `sides`/`roofs`) sets the window pattern per building: `ribbon`, `blank`, or default (`brick`/`mod` by colour). Add a building id there after checking its photo.
+- `special.W13` builds the tower core, banner, glazed strip and the rooftop sign (`signTex`). `special.W11` adds the barrel roof.
+- Sol-i view: `followOn()`, `followStart()`, `tourTick()` and the `if(fol){…}` block in `loop()`. `followHold` is set when the user drags.
+- Night: `radTex`, `glowMat`, `poolMat`, and the night branch of `applyLook()`.
+- Not yet verified: frame rate and feel of the Sol-i view on a real phone; the exact position of the W13 core along the facade (placed at the middle of the south-facing edge).
