@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "mc.project-bootstrap.v1",
+  "qualification": "EXISTING_REPOSITORY_IMPORT",
+  "projectId": "WOOSONG_3D_CAMPUS",
+  "repositoryId": "JoeyAJ/woosong-3d-campus",
+  "branch": "main",
+  "entryPath": "HANDOFF.md",
+  "draftRevision": 1,
+  "preparedAt": "2026-11-16T11:10:00.000Z",
+  "repositoryVisibility": "public (GitHub Pages source; no private data)",
+  "executionAuthorized": false,
+  "registration": "PENDING",
+  "reporting": "PENDING_SCOPE_APPROVAL",
+  "environment": "CODE_ONLY",
+  "deployment": "GITHUB_PAGES"
+}

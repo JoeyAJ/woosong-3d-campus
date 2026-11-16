@@ -1,4 +1,28 @@
-# Handoff (v1.0)
+# 又松大學 3D 校園預覽 — handoff
+
+Project: WOOSONG_3D_CAMPUS
+Task: v1.1 — W13 sign correction, night lighting, facade styles, Sol-i view
+Status: DELIVERED_PENDING_OWNER_ACCEPTANCE
+PreparedAt: 2026-11-16T20:10:00+09:00
+Last Developer: Claude (claude.ai session)
+Executed by: Claude
+Actual Model: claude-fable-5-2 (v1.1); earlier v1 work in the same session
+Baseline: main
+
+## Current stage
+
+v1.1 is live at https://joeyaj.github.io/woosong-3d-campus/ (GitHub Pages, root of `main`). Joey has not yet reviewed v1.1. Entry documents: PRD.md, docs/PRODUCT_CHARTER.md, docs/PHASE_PLAN.md, docs/DEVELOPMENT_LOG.md.
+
+Note for Mission Control: this repository is public because the public URL is served by GitHub Pages from it. It holds no private data.
+
+## Next action
+
+Joey reviews v1.1 (W13 sign, night view, Sol-i view) on a real phone and decides the next upgrade from docs/PHASE_PLAN.md.
+
+## Acceptance
+
+Joey: PENDING
+Independent verification: PENDING
 
 ## State
 Working, single file `index.html` (~890 lines + embedded data: GEO, photos, logo). Public URL: https://joeyaj.github.io/woosong-3d-campus/ . Version label: v1.
